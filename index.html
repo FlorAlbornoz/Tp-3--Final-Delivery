@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nika Club</title>
+    <!--Bootstrap css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--my css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo brand"> Nika </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="bi bi-menu-button-wide"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home Page</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Links </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/nikaclubomakase/?hl=es">Instagram</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://maps.app.goo.gl/YD4sKxC8potVCFSbA">Location</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-secondary ms-2">Contact Us</button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+<img src="images/foto (6).jpg"class="img-fluid w-100"  alt="Primera foto">
+<h1 class="display-2 container-fluid text-center mt-3">Nika Club Omakase</h1>
+<p class="blockquote text-center">Nika is a restaurant that celebrates the richness of Japanese culture, offering a unique experience where traditional drinks and high-quality sushi take center stage, transporting diners directly to Japan through authentic flavors and a carefully crafted atmosphere.</p>
+    </header>
+
+
+    <main class="container-md mt-4"> 
+
+        <section class="w-75 m-auto row justify-content-between container text-center border">
+
+            <div class="col-md-12 col-lg-3 pt-3">
+                <h2>Wines</h2>
+                <p>Wine has gained popularity as an interesting and sophisticated option for pairing with japanese dishes. Japanese cuisine is known for its delicacy and balance of flavors, so choosing the right wine can enhance and complement that harmony. </p>
+            </div> 
+
+            <div class="col-md-5 col-lg-3 pt-3">
+                <h2>Wine Pairing</h2>
+               <p>Wine pairing is the art of combining wines with food to enhance the flavors of both. A well-matched wine can elevate a dish’s taste, and conversely, a poor pairing can overshadow both.</p>
+            </div> 
+
+            <div class="col-md-5 col-lg-3 pt-3">
+                <h2>Wine Tasting</h2>
+                <p> Wine tasting involves multiple senses, primarily sight, smell, and taste. Professional tasters evaluate the wine in three stages: sight, smell and taste.</p>
+            </div> 
+
+        </section>
+
+       
+    <h2 class="display-1 text-center mt-4">Follow us for more details</h2>
+     <p class="blockquote text-center">We are a team dedicated to wine tasting and fine Japanese cuisine, especially sushi. To experience this, we have a restaurant in Buenos Aires where you are welcome to visit us anytime.</p>
+      
+
+        <section class="row justify-content-between mt-5 w-100 m-auto">
+
+            <div class="col-sm-12 col-md-6 col-lg-3 pt-2">
+                <img class="img-fluid img-thumbnail" src="images/foto (1).jpg" alt="">
+            </div> 
+
+            <div class="col-md-5 col-lg-3 pt-2">
+                <img class="img-fluid img-thumbnail" src="images/foto (2).jpg" alt="">
+            </div> 
+
+            <div class="col-md-5 col-lg-3  pt-2">
+                <img class="img-fluid img-thumbnail" src="images/foto (3).jpg" alt="">
+            </div> 
+
+        </section> 
+
+    </main>
+
+
+
+    <!--modal-->
+
+    <div class="modal fade" id="myModal" tabindex="-1" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title">Contact Us</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+               <form class="needs-validation" novalidate action="code.php" method="post">
+                
+            <div>
+              <label for="name" class="form-label">Name</label>
+                <input type="text" required class="form-control" id="name" name="name">
+                <div class="invalid-feedback"> Your name is wrong!</div>
+            </div>
+
+            <div>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" required class="form-control" id="email" name="email">
+                <div class="invalid-feedback"> Your email is wrong</div>
+            </div>
+
+            <div>
+                <label for="note" class="form-label">Note</label>
+                <input type="Note" required class="form-control" id="note" name="email">
+                <div class="invalid-feedback"> Leave a message </div>
+            </div>
+
+               <button class="btn btn-light">Send form</button>
+               </form> 
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div> 
+
+<script src="js/code.js"></script>
+
+
+<footer class="container-fluid">
+    
+    <h5> Nika Club Omakase</h5>
+    <p>Ubicacion: Nicaragua 5952</p>
+    <p>Telefono: 111524774857</p>
+    <img src="images/instagram.png" alt="Instagram image">
+    <img src="images/whatsapp.png" alt="whatsapp image">
+    
+    </footer>
+
+
+</body>
+
+</html>
